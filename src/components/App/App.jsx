@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
+import PageNotFound from '../PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/profile" />
         <Route path="/signin" />
         <Route path="/signup" />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
