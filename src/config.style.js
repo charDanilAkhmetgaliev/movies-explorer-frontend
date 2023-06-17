@@ -1,7 +1,7 @@
 const NotFoundPageConfig = {
-  headerContent: 404,
-  subheaderContent: 'Страница не найдена',
-  backLinkContent: 'Назад',
+  headerText: 404,
+  subheaderText: 'Страница не найдена',
+  backButtonText: 'Назад',
 };
 
 const MainConfig = {

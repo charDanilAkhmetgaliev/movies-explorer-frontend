@@ -1,23 +1,12 @@
 .not-found {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  @extend .page;
+  &__info {
+    @include flex-container-config($direction: column, $justify-content: center, $align: center, $gap: 10px);
+  }
   &__header {
-    margin: 0;
-    padding: 0;
-    font-size: 80px;
-    line-height: 97px;
+    @include text-config($size: 80px, $line-height: 97px, $align: center);
   }
   &__sub-header {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    line-height: 15px;
+    @include text-config($size: 12px, $line-height: 15px, $align: center);
   }
 }

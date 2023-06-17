@@ -1,0 +1,18 @@
+@mixin flex-container-config($direction: row, $justify-content: normal, $align: normal, $gap: 0) {
+  @extend .flex-container;
+
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin text-config($size: $def-font-size, $style: normal, $weight: $regular-font-weight, $line-height: $def-line-height, $align: inherit) {
+  font: {
+    size: $size;
+    style: $style;
+    weight: $weight;
+  }
+  text-align: $align;
+  line-height: $line-height;
+}

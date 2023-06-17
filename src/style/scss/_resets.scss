@@ -1,0 +1,41 @@
+// Remove margins
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+// Remove default list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Set the default font family and size
+body {
+  font-family: $main-font-name, sans-serif;
+  font-size: $def-font-size;
+  line-height: $def-line-height;
+  color: $def-font-color;
+}
+
+// Set App to fullscreen
+#root {
+  width: $full-screen-w;
+  height: $full-screen-h;
+}
+
+// Reset anchor text decoration
+a {
+  text-decoration: none;
+}
+
+// Add a pointer cursor to clickable elements
+button,
+[role="button"] {
+  cursor: pointer;
+}
