@@ -1,0 +1,10 @@
+.header {
+  padding: 18px 14px;
+  @extend %container-space-between;
+  &__logo {
+    @include image-decoration(url('../../images/logo.svg'), (32px 32px));
+  }
+  &__burger-menu {
+
+  }
+}

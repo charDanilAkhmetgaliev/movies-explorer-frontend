@@ -18,14 +18,23 @@
   max-width: fit-content;
 }
 
-%container-header-style {
+%flex-container {
   position: relative;
   display: flex;
+  box-sizing: border-box;
+}
+
+%container-center-style {
+  @extend %flex-container;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: $def-gap;
-  box-sizing: border-box;
+}
+
+%container-space-between {
+  @extend %flex-container;
+  justify-content: space-between;
 }
 
 %button-link-style {
@@ -38,4 +47,10 @@
 %mobile-button-link-style {
   @extend %button-link-style;
   font-size: $mobile-link-size;
+}
+
+%image-decoration-style {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
 }
