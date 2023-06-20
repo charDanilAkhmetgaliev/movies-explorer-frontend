@@ -1,12 +1,16 @@
 .not-found {
-  @extend .page;
-  &__info {
-    @include flex-container-config($direction: column, $justify-content: center, $align: center, $gap: 10px);
-  }
+  padding: 329px 10px;
+  @extend %page-style;
+  @extend %container-header-style;
   &__header {
-    @include text-config($size: 80px, $line-height: 97px, $align: center);
+    @include header($mobile-error-code-size);
   }
   &__sub-header {
-    @include text-config($size: 12px, $line-height: 15px, $align: center);
+    @include header($mobile-link-size);
+  }
+  &__back-button {
+    position: absolute;
+    bottom: 30px;
+    @extend %mobile-button-link-style;
   }
 }

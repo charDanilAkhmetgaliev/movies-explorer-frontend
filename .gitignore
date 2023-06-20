@@ -20,6 +20,9 @@
 # production
 /build
 
+#other
+/makets
+
 # misc
 .DS_Store
 .env.local

@@ -1,18 +1,41 @@
-.page {
+%page-style {
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
-.text-style {
-
+%text-style {
+  font: {
+    weight: $regular-font-weight;
+    style: normal;
+  }
+  line-height: $def-line-height;
 }
 
-.flex-container {
+%header-style {
+  @extend %text-style;
+  text-align: center;
+  max-width: fit-content;
+}
+
+%container-header-style {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $def-gap;
+  box-sizing: border-box;
 }
 
-.button-link-style {
+%button-link-style {
+  padding: 0;
+  background-color: transparent;
   max-width: fit-content;
   border: 0;
-  text-align: center;
+}
+
+%mobile-button-link-style {
+  @extend %button-link-style;
+  font-size: $mobile-link-size;
 }

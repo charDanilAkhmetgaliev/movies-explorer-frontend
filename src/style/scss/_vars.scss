@@ -1,12 +1,24 @@
-// screen variables
+// screen
 $full-screen-w: 100vw;
 $full-screen-h: 100vh;
 
-// typography variables
+// colors
+$def-font-color: rgb(0, 0, 0);
+$def-background-color: rgb(255, 255, 255);
+
+// typography
 $main-font-name: 'Inter';
 $def-font-size: 16px;
-$def-font-color: rgb(0, 0, 0);
-$def-line-height: 1.5;
+
+$def-line-height: 1.21;
+
 $regular-font-weight: 400;
 $medium-font-weight: 500;
 $black-font-weight: 900;
+
+// mobile typography
+$mobile-error-code-size: 80px;
+$mobile-link-size: 12px;
+
+// flex
+$def-gap: 10px;
