@@ -1,16 +1,18 @@
 .not-found {
+  @include page();
   padding: 329px 10px;
-  @extend %page-style;
-  @extend %container-center-style;
+  @extend %container-col-style;
+  justify-content: center;
+  align-items: center;
   &__header {
-    @include header($mobile-error-code-size);
+    @include header(80px);
   }
   &__sub-header {
-    @include header($mobile-link-size);
+    @include header($def-link-size);
   }
   &__back-button {
     position: absolute;
     bottom: 30px;
-    @extend %mobile-button-link-style;
+    @include button($def-link-size);
   }
 }

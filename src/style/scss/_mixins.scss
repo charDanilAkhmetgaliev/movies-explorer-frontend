@@ -1,17 +1,19 @@
+@mixin page($device-width: $def-screen-width) {
+  @extend %page-style;
+  max-width: $device-width;
+}
+
 @mixin header($size: $def-font-size) {
   @extend %header-style;
   font-size: $size;
 }
 
-@mixin button-link($size: $def-font-size) {
-  @extend %button-link-style;
-  padding: 0;
+@mixin button($size: $def-font-size) {
+  @extend %button-style;
   font-size: $size;
 }
 
-@mixin image-decoration($src, $size) {
+@mixin image-decoration($src) {
   @extend %image-decoration-style;
   background-image: $src;
-  background-size: $size;
-  size: $size;
 }

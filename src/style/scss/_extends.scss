@@ -1,7 +1,6 @@
 %page-style {
+  margin: auto;
   width: 100%;
-  height: auto;
-  box-sizing: border-box;
 }
 
 %text-style {
@@ -18,39 +17,28 @@
   max-width: fit-content;
 }
 
-%flex-container {
+%container-style {
   position: relative;
   display: flex;
   box-sizing: border-box;
 }
 
-%container-center-style {
-  @extend %flex-container;
+%container-col-style {
+  @extend %container-style;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: $def-gap;
 }
 
-%container-space-between {
-  @extend %flex-container;
-  justify-content: space-between;
-}
-
-%button-link-style {
+%button-style {
   padding: 0;
   background-color: transparent;
   max-width: fit-content;
   border: 0;
 }
 
-%mobile-button-link-style {
-  @extend %button-link-style;
-  font-size: $mobile-link-size;
-}
-
 %image-decoration-style {
+  padding: 0;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
