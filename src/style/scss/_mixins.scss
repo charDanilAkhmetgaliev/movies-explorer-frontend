@@ -9,7 +9,7 @@
 }
 
 @mixin button($size: $def-font-size) {
-  @extend %button-style;
+  @extend %button-link-style;
   font-size: $size;
 }
 

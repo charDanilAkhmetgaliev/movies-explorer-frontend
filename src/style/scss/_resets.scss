@@ -19,9 +19,12 @@ ol {
 body {
   font-family: $def-font-name, sans-serif;
   font-size: $def-font-size;
-  color: $def-font-color;
-  background-color: $def-background-color;
+  color: $color-black;
+  background-color: $color-white;
+
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;

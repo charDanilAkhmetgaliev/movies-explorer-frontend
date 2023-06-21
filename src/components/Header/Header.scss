@@ -14,8 +14,30 @@
     @include image-decoration(url('../../images/logo.svg'));
   }
   &__burger-menu {
+    @include button();
     width: 40px;
     height: 43px;
     @include image-decoration(url('../../images/burger.svg'));
+  }
+  &__auth-bar {
+    @extend %container-style;
+    gap: 14px;
+  }
+  &__register-button {
+    @include button($def-header-button-font-size);
+    font-weight: $medium-font-weight;
+    line-height: 16px;
+  }
+  &__login-button {
+    padding: 5px 12px;
+    background-color: $color-black;
+    color: $color-white;
+    border: 1px;
+    border-radius: 3px;
+    line-height: 16px;
+    font: {
+      size: $def-header-button-font-size;
+      weight: $medium-font-weight;
+    }
   }
 }

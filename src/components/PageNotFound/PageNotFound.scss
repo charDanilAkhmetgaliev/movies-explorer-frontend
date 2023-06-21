@@ -8,11 +8,11 @@
     @include header(80px);
   }
   &__sub-header {
-    @include header($def-link-size);
+    @include header($def-font-size);
   }
   &__back-button {
     position: absolute;
     bottom: 30px;
-    @include button($def-link-size);
+    @include button($def-font-size);
   }
 }
