@@ -1,48 +1,49 @@
 %page-style {
+  @extend %zero-indents;
   margin: auto;
   width: 100%;
 }
 
-%text-style {
-  font: {
-    weight: $regular-font-weight;
-    style: normal;
-  }
-  line-height: $def-line-height;
-}
-
 %header-style {
-  @extend %text-style;
   text-align: center;
   max-width: fit-content;
 }
 
+// container styles
 %container-style {
   position: relative;
   display: flex;
   box-sizing: border-box;
 }
 
-%container-col-style {
-  @extend %container-style;
-  flex-direction: column;
-}
-
+// button styles
 %button-style {
-  border: 1px;
-}
-
-
-%button-link-style {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
+  @extend %zero-indents;
   width: fit-content;
   cursor: pointer;
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
+%button-def-style {
+  @extend %button-style;
+  background-color: $color-black;
+  border: 1px;
+  color: $color-white;
+  font-weight: $medium-font-weight;
+}
+
+%button-link-style {
+  @extend %button-style;
+  background-color: transparent;
+  border: 0;
+}
+
+// image styles
 %image-decoration-style {
-  padding: 0;
+  @extend %zero-indents;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;

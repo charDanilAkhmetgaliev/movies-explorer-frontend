@@ -1,0 +1,20 @@
+%zero-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-style(
+  $size: $mob-font-size,
+  $weight: $regular-font-weight,
+  $height: $line-height,
+  $color: $color-black,
+  $style: normal
+) {
+  font: {
+    size: $size;
+    weight: $weight;
+    style: $style;
+  }
+  line-height: $height;
+  color: $color;
+}

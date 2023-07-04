@@ -1,18 +1,18 @@
 .not-found {
   @include page();
+  @include container(column, center, center, 10px);
   padding: 329px 10px;
-  @extend %container-col-style;
-  justify-content: center;
-  align-items: center;
   &__header {
-    @include header(80px);
+    @extend %header-style;
+    @include text-style(80px);
   }
   &__sub-header {
-    @include header($def-font-size);
+    @extend %header-style;
+    @include text-style();
   }
   &__back-button {
+    @include button-link();
     position: absolute;
     bottom: 30px;
-    @include button($def-font-size);
   }
 }

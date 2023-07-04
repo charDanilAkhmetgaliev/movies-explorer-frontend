@@ -1,17 +1,22 @@
-// ** default(mobile) variables **
-// typography
-$def-font-name: 'Inter';
-$def-font-size: 12px;
-$def-header-button-font-size: 10px;
+// ** general variables **
+// colors
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+//typography
+$inter-font-name: 'Inter';
 
-$def-line-height: 1.21;
+$line-height: 1.21;
 
 $regular-font-weight: 400;
 $medium-font-weight: 500;
 $black-font-weight: 900;
+
+// ** mobile variables **
+// typography
+$mob-font-size: 12px;
+$mob-header-font-size: 10px;
+
 // sizes
-$def-screen-width: 320px;
-$def-logo-size: 38px;
-// colors
-$color-black: rgb(0, 0, 0);
-$color-white: rgb(255, 255, 255);
+$mob-screen-width: 320px;
+$mob-logo-size: 38px;
+$mob-button-border-radius: 3px;

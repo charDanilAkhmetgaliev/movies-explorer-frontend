@@ -1,43 +1,30 @@
 .header {
+  @include container(row, space-between, center);
   margin: auto;
-  padding: 15px 14px;
+  padding: 18px 14px;
   width: 100%;
-  max-width: $def-screen-width;
-
-  @extend %container-style;
-  justify-content: space-between;
-  align-items: center;
-
+  max-width: $mob-screen-width;
   &__logo {
-    width: $def-logo-size;
-    height: $def-logo-size;
     @include image-decoration(url('../../images/logo.svg'));
+    width: $mob-logo-size;
+    height: $mob-logo-size;
   }
   &__burger-menu {
     @include button();
+    @include image-decoration(url('../../images/burger.svg'));
     width: 40px;
     height: 43px;
-    @include image-decoration(url('../../images/burger.svg'));
   }
   &__auth-bar {
-    @extend %container-style;
-    gap: 14px;
+    @include container(row, center, center, 14px);
   }
   &__register-button {
-    @include button($def-header-button-font-size);
-    font-weight: $medium-font-weight;
-    line-height: 16px;
+    @include button-link;
+    @include text-style($mob-header-font-size, $medium-font-weight, 16px);
   }
   &__login-button {
+    @include button;
+    @include text-style($mob-header-font-size, $medium-font-weight, 16px, $color: $color-white);
     padding: 5px 12px;
-    background-color: $color-black;
-    color: $color-white;
-    border: 1px;
-    border-radius: 3px;
-    line-height: 16px;
-    font: {
-      size: $def-header-button-font-size;
-      weight: $medium-font-weight;
-    }
   }
 }

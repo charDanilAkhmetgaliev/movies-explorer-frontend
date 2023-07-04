@@ -1,19 +1,27 @@
-@mixin page($device-width: $def-screen-width) {
+@mixin page($device-width: $mob-screen-width) {
   @extend %page-style;
   max-width: $device-width;
 }
 
-@mixin header($size: $def-font-size) {
-  @extend %header-style;
-  font-size: $size;
+@mixin button($font-size: $mob-font-size, $border-radius: $mob-button-border-radius) {
+  @extend %button-def-style;
+  border-radius: $border-radius;
 }
 
-@mixin button($size: $def-font-size) {
+@mixin button-link($font-size: $mob-font-size, $font-color: $color-black) {
   @extend %button-link-style;
-  font-size: $size;
+  color: $font-color;
 }
 
 @mixin image-decoration($src) {
   @extend %image-decoration-style;
   background-image: $src;
+}
+
+@mixin container($direction: row, $position: flex-start, $align: flex-start, $gap: 0) {
+  @extend %container-style;
+  flex-direction: $direction;
+  justify-content: $position;
+  align-items: $align;
+  gap: $gap;
 }

@@ -15,7 +15,7 @@ function Header() {
             </div>
         )}
         />
-        <Route path="/signin" element={<div className="header__burger-menu" type="button" />} />
+        <Route path="*" element={<div className="header__burger-menu" type="button" />} />
       </Routes>
     </header>
   );
