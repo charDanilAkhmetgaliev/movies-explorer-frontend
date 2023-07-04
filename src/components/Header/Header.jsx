@@ -1,9 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { HeaderConfig } from '../../config.style';
 
 function Header() {
+  const isMain = (window.location.pathname === '/');
+
   return (
-    <header className="header">
+    <header className="header" style={isMain && { backgroundColor: HeaderConfig.introColor }}>
       <div className="header__logo" />
       <Routes>
         <Route
@@ -15,7 +18,7 @@ function Header() {
             </div>
         )}
         />
-        <Route path="*" element={<div className="header__burger-menu" type="button" />} />
+        <Route path="*" element={<div className="header__burger-menu" />} />
       </Routes>
     </header>
   );
