@@ -6,14 +6,18 @@ const NotFoundPageConfig = {
 
 const HeaderConfig = {
   introColor: 'rgb(243, 193, 248)',
+  loginText: 'Войти',
+  registerText: 'Регистрация',
 };
 
-const MainConfig = {
-
+const MainPageConfig = {
+  promo: {
+    titleText: 'Учебный проект студента факультета Веб-разработки.',
+  },
 };
 
 export {
   NotFoundPageConfig,
   HeaderConfig,
-  MainConfig,
+  MainPageConfig,
 };

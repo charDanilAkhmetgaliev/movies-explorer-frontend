@@ -13,8 +13,8 @@ function Header() {
           path="/"
           element={(
             <div className="header__auth-bar">
-              <button className="header__register-button" type="button">Регистрация</button>
-              <button className="header__login-button" type="button">Войти</button>
+              <button className="header__register-button" type="button">{HeaderConfig.registerText}</button>
+              <button className="header__login-button" type="button">{HeaderConfig.loginText}</button>
             </div>
         )}
         />

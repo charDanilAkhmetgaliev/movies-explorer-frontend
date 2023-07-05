@@ -8,7 +8,8 @@
   $weight: $regular-font-weight,
   $height: $line-height,
   $color: $color-black,
-  $style: normal
+  $style: normal,
+  $align: inherit
 ) {
   font: {
     size: $size;
@@ -17,4 +18,5 @@
   }
   line-height: $height;
   color: $color;
+  text-align: $align;
 }

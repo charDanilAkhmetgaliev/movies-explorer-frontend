@@ -13,9 +13,10 @@
   color: $font-color;
 }
 
-@mixin image-decoration($src) {
+@mixin image-decoration($src, $size: contain) {
   @extend %image-decoration-style;
   background-image: $src;
+  background-size: $size;
 }
 
 @mixin container($direction: row, $position: flex-start, $align: flex-start, $gap: 0) {

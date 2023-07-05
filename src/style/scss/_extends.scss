@@ -1,5 +1,5 @@
 %page-style {
-  @extend %zero-indents;
+  padding: 0;
   margin: auto;
   width: 100%;
 }
@@ -47,5 +47,4 @@
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
