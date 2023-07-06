@@ -6,9 +6,11 @@ function AboutProject() {
   const { tableData } = MainPageConfig.aboutProject;
 
   return (
-    <div className="about-project">
-      <h2 className="about-project__title">{MainPageConfig.aboutProject.titleText}</h2>
-      <div className="about-project__separating-line" />
+    <section className="about-project">
+      <div className="about-project__title-container">
+        <h2 className="about-project__title">{MainPageConfig.aboutProject.titleText}</h2>
+        <hr className="about-project__separating-line" />
+      </div>
       <ul className="about-project__list">
         { aboutProjectData.map((item) => (
           <li className="about-project__list-item">
@@ -30,7 +32,7 @@ function AboutProject() {
           ))
         }
       </table>
-    </div>
+    </section>
   );
 }
 

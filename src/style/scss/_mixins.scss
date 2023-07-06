@@ -26,3 +26,10 @@
   align-items: $align;
   gap: $gap;
 }
+
+// typography
+@mixin title-text($size: $mob-title-font-size, $letter-spacing: inherit) {
+  @extend %title-text-style;
+  font-size: $size;
+  letter-spacing: $letter-spacing;
+}
