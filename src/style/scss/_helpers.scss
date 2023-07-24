@@ -3,15 +3,17 @@
   padding: 0;
 }
 
-@mixin text-style(
-  $size: $mob-font-size,
-  $weight: $regular-font-weight,
-  $height: $line-height,
+@mixin text(
+  $family: $inter-f-nm,
+  $size: $mob-m,
+  $weight: $regular-f-weight,
+  $height: $line-h,
   $color: $color-black,
   $style: normal,
   $align: inherit
 ) {
   font: {
+    family: $family, sans-serif;
     size: $size;
     weight: $weight;
     style: $style;

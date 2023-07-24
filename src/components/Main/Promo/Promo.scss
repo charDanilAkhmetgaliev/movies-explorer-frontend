@@ -4,7 +4,7 @@
   padding: 183px 0 40px;
   background-color: $color-promo;
   &__title {
-    @include text-style($size: 31px, $height: 39px, $align: center);
+    @include text($size: 31px, $height: 39px, $align: center);
     letter-spacing: -1.24px;
   }
   &__logo {

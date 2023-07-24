@@ -1,14 +1,14 @@
-@mixin page($device-width: $mob-screen-width) {
+@mixin page($device-width: $mob-screen-w) {
   @extend %page-style;
   max-width: $device-width;
 }
 
-@mixin button($font-size: $mob-font-size, $border-radius: $mob-button-border-radius) {
+@mixin button($font-size: $mob-m, $border-radius: $mob-br-rd) {
   @extend %button-def-style;
   border-radius: $border-radius;
 }
 
-@mixin button-link($font-size: $mob-font-size, $font-color: $color-black) {
+@mixin button-link($font-size: $mob-m, $font-color: $color-black) {
   @extend %button-link-style;
   color: $font-color;
 }
@@ -25,11 +25,4 @@
   justify-content: $position;
   align-items: $align;
   gap: $gap;
-}
-
-// typography
-@mixin title-text($size: $mob-title-font-size, $letter-spacing: inherit) {
-  @extend %title-text-style;
-  font-size: $size;
-  letter-spacing: $letter-spacing;
 }

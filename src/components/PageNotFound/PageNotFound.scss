@@ -4,11 +4,11 @@
   padding: 329px 10px;
   &__header {
     @extend %header-style;
-    @include text-style(80px);
+    @include text(80px);
   }
   &__sub-header {
     @extend %header-style;
-    @include text-style();
+    @include text();
   }
   &__back-button {
     @include button-link();

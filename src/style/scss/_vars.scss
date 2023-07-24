@@ -1,25 +1,28 @@
+// abbreviations
+// w - width, h - height, bt - button, br - border, rd - radius, f - font, nm - name
 // ** general variables **
 // colors
 $color-black: rgb(0, 0, 0);
 $color-white: rgb(255, 255, 255);
 $color-promo: rgb(243, 193, 248);
-//typography
-$inter-font-name: 'Inter';
-
-$line-height: 1.21;
-
-$regular-font-weight: 400;
-$medium-font-weight: 500;
-$black-font-weight: 900;
-
-// ** mobile variables **
+$color-gray: rgb(160, 160, 160);
+$color-lightgray: rgb(242, 242, 242);
 // typography
-$mob-font-size: 12px;
-$mob-header-font-size: 10px;
-$mob-title-font-size: 18px;
-$mob-paragraph-font-size: 11px;
+$inter-f-nm: 'Inter';
+$suisseintl-f-nm: 'Suisse Intl';
+
+$line-h: 1.21;
+
+$regular-f-weight: 400;
+$medium-f-weight: 500;
+$black-f-weight: 900;
+// font sizes
+$mob-xs: 10px;
+$mob-s: 11px;
+$mob-m: 12px;
+$mob-l: 18px;
 
 // sizes
-$mob-screen-width: 320px;
+$mob-screen-w: 320px;
 $mob-logo-size: 38px;
-$mob-button-border-radius: 3px;
+$mob-br-rd: 3px;

@@ -3,7 +3,7 @@
   margin: auto;
   padding: 18px 14px;
   width: 100%;
-  max-width: $mob-screen-width;
+  max-width: $mob-screen-w;
   &__logo {
     @include image-decoration(url('../../images/logo.svg'));
     width: $mob-logo-size;
@@ -20,11 +20,11 @@
   }
   &__register-button {
     @include button-link;
-    @include text-style($mob-header-font-size, $medium-font-weight, 16px);
+    @include text($size: $mob-xs, $weight: $medium-f-weight, $height: 16px);
   }
   &__login-button {
     @include button;
-    @include text-style($mob-header-font-size, $medium-font-weight, 16px, $color: $color-white);
+    @include text($size: $mob-xs, $weight: $medium-f-weight, $height: 16px, $color: $color-white);
     padding: 5px 12px;
   }
 }

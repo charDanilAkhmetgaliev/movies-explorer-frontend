@@ -3,20 +3,20 @@
   padding: 70px 18px;
   margin: 0;
   &__title-container {
-    @include container(column,$gap: 28px);
     @extend %zero-indents;
+    @include container(column,$gap: 28px);
     width: 100%;
   }
   &__title {
-    @include title-text($letter-spacing: -0.72px);
     @extend %zero-indents;
+    @include text($size: $mob-l);
+    letter-spacing: -0.72px;
     width: 100%;
   }
   &__separating-line {
     @extend %zero-indents;
     width: 100%;
     height: 1px;
-    border: 0;
     background-color: $color-black;
   }
   &__list {
@@ -26,22 +26,42 @@
   &__list-item {
     @extend %zero-indents;
     @include container(column, $gap: 16px);
+    @include text();
   }
   &__item-title {
     @extend %zero-indents;
-    @include title-text($letter-spacing: -0.72px);
-    width: 100%;
+    @include text($size: $mob-l);
+    letter-spacing: -0.72px;
   }
   &__item-info {
     @extend %zero-indents;
+    @include text($size: $mob-s, $height: 16px);
   }
   &__table {
-
+    @extend %zero-indents;
+    width: 100%;
+  }
+  &__table-body {
+    @extend %zero-indents;
+    @include text($family: $suisseintl-f-nm, $size: $mob-s, $color: $color-gray, $align: center);
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 35px);
+    tr:first-child {
+      font-family: $inter-f-nm, 'sans-serif';
+      background-color: $color-lightgray;
+      color: $color-black;
+      td:first-child {
+        background-color: $color-black;
+        color: white;
+      }
+    }
   }
   &__table-row {
-
+    display: grid;
+    grid-template-columns: 100px auto;
   }
   &__table-cell {
-
+    @include container($position: center, $align: center);
   }
 }
