@@ -15,7 +15,7 @@ const MainPageConfig = {
     titleText: 'Учебный проект студента факультета Веб-разработки.',
   },
   aboutProject: {
-    titleText: 'О проекте',
+    header: 'О проекте',
     itemList: [
       {
         title: 'Дипломный проект включал 5 этапов',
@@ -29,6 +29,20 @@ const MainPageConfig = {
     tableData: [
       ['1 неделя', '4 недели'],
       ['Back-end', 'Front-end'],
+    ],
+  },
+  techs: {
+    header: 'Технологии',
+    title: '7 технологий',
+    info: 'На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.',
+    techsList: [
+      'HTML',
+      'CSS',
+      'JS',
+      'React',
+      'Git',
+      'Express.js',
+      'mongoDB',
     ],
   },
 };

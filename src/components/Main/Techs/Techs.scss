@@ -1,0 +1,33 @@
+.techs {
+  @include container(column, $gap: 60px);
+  padding: 70px 18px;
+  margin: 0;
+  &__container {
+    @include container(column, $align: center);
+  }
+  &__title {
+    @include text($size: $mob-xxl, $align: center);
+    margin-bottom: 24px;
+    letter-spacing: -1.2px;
+  }
+  &__info {
+    @include text($size: $mob-s, $align: center, $height: 16px);
+    margin-bottom: 50px;
+    letter-spacing: -0.44px;
+  }
+  &__list {
+    @include text($size: $mob-m, $align: center);
+    letter-spacing: -0.48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  &__tech {
+    width: 84px;
+    height: 57px;
+    padding: 21px 0;
+    background-color: $color-gray-tech-bkg;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+}

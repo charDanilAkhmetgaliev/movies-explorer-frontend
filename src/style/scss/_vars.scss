@@ -1,12 +1,14 @@
 // abbreviations
-// w - width, h - height, bt - button, br - border, rd - radius, f - font, nm - name
+// w - width, h - height, bt - button, br - border, rd - radius, f - font, nm - name, bkg - background
 // ** general variables **
 // colors
 $color-black: rgb(0, 0, 0);
 $color-white: rgb(255, 255, 255);
 $color-promo: rgb(243, 193, 248);
-$color-gray: rgb(160, 160, 160);
-$color-lightgray: rgb(242, 242, 242);
+$color-gray-cell-f: rgb(160, 160, 160);
+$color-gray-cell-bkg: rgb(242, 242, 242);
+$color-gray-tech-bkg: rgb(232, 232, 232);
+
 // typography
 $inter-f-nm: 'Inter';
 $suisseintl-f-nm: 'Suisse Intl';
@@ -21,6 +23,7 @@ $mob-xs: 10px;
 $mob-s: 11px;
 $mob-m: 12px;
 $mob-l: 18px;
+$mob-xxl: 30px;
 
 // sizes
 $mob-screen-w: 320px;

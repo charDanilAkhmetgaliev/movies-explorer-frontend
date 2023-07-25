@@ -1,7 +1,7 @@
 .about-project {
   @include container(column, $gap: 60px);
   margin: 0;
-  padding: 70px 18px;
+  padding: 70px 18px 55px;
   &__list {
     @extend %zero-indents;
     @include container(column, $gap: 56px);
@@ -26,13 +26,13 @@
   }
   &__table-body {
     @extend %zero-indents;
-    @include text($family: $suisseintl-f-nm, $size: $mob-s, $color: $color-gray, $align: center);
+    @include text($family: $suisseintl-f-nm, $size: $mob-s, $color: $color-gray-cell-f, $align: center);
     width: 100%;
     display: grid;
     grid-template-rows: repeat(2, 35px);
     tr:first-child {
       font-family: $inter-f-nm, 'sans-serif';
-      background-color: $color-lightgray;
+      background-color: $color-gray-cell-bkg;
       color: $color-black;
       td:first-child {
         background-color: $color-black;

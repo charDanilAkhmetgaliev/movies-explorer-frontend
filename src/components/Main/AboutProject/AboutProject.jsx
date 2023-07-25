@@ -7,7 +7,7 @@ function AboutProject() {
   const { tableData } = MainPageConfig.aboutProject;
   return (
     <section className="about-project">
-      <SectionHeader title={MainPageConfig.aboutProject.titleText} />
+      <SectionHeader header={MainPageConfig.aboutProject.header} />
       <ul className="about-project__list">
         { aboutProjectData.map((item) => (
           <li key={Math.floor(Math.random() * 1000 + 1)} className="about-project__list-item">
