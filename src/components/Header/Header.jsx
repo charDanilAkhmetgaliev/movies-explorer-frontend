@@ -4,7 +4,6 @@ import { HeaderConfig } from '../../config.style';
 
 function Header() {
   const isMain = (window.location.pathname === '/');
-
   return (
     <header className="header" style={isMain && { backgroundColor: HeaderConfig.introColor }}>
       <div className="header__logo" />

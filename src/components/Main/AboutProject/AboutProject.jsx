@@ -1,15 +1,13 @@
 import React from 'react';
 import { MainPageConfig } from '../../../config.style';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 function AboutProject() {
   const aboutProjectData = MainPageConfig.aboutProject.itemList;
   const { tableData } = MainPageConfig.aboutProject;
   return (
     <section className="about-project">
-      <div className="about-project__title-container">
-        <h2 className="about-project__title">{MainPageConfig.aboutProject.titleText}</h2>
-        <div className="about-project__separating-line" />
-      </div>
+      <SectionHeader title={MainPageConfig.aboutProject.titleText} />
       <ul className="about-project__list">
         { aboutProjectData.map((item) => (
           <li key={Math.floor(Math.random() * 1000 + 1)} className="about-project__list-item">
