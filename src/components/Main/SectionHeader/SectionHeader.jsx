@@ -1,9 +1,9 @@
 import React from 'react';
 
-function SectionHeader({ header }) {
+function SectionHeader({ headerTitle }) {
   return (
     <div className="section-header">
-      <h1 className="section-header__title">{header}</h1>
+      <h1 className="section-header__title">{headerTitle}</h1>
       <div className="section-header__separating-line" />
     </div>
   );

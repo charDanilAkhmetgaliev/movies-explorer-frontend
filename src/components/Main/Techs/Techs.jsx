@@ -1,25 +1,26 @@
 import React from 'react';
-import SectionHeader from '../SectionHeader/SectionHeader';
 import { MainPageConfig } from '../../../config.style';
+import SectionWrapper from '../SectionWrapper/SectionWrapper';
 
 function Techs() {
-  const techsData = MainPageConfig.techs;
+  const {
+    header, title, info, listData,
+  } = MainPageConfig.techs;
 
   return (
-    <section className="techs">
-      <SectionHeader header={techsData.header} />
-      <div className="techs__container">
-        <h1 className="techs__title">{techsData.title}</h1>
-        <p className="techs__info">{techsData.info}</p>
+    <SectionWrapper headerTitle={header}>
+      <div className="techs">
+        <h1 className="techs__title">{title}</h1>
+        <p className="techs__info">{info}</p>
         <ul className="techs__list">
           {
-            techsData.techsList.map((tech) => (
-              <li className="techs__tech">{tech}</li>
-            ))
-          }
+              listData.map((tech) => (
+                <li className="techs__tech">{tech}</li>
+              ))
+            }
         </ul>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 

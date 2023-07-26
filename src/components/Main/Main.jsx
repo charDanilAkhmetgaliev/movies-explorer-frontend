@@ -5,7 +5,7 @@ import Techs from './Techs/Techs';
 
 function Main() {
   return (
-    <div className="Main">
+    <div className="main">
       <Promo />
       <AboutProject />
       <Techs />

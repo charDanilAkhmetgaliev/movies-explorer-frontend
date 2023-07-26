@@ -1,31 +1,23 @@
 .about-project {
   @include container(column, $gap: 60px);
-  margin: 0;
-  padding: 70px 18px 55px;
   &__list {
-    @extend %zero-indents;
     @include container(column, $gap: 56px);
   }
   &__list-item {
-    @extend %zero-indents;
     @include container(column, $gap: 16px);
     @include text();
   }
   &__item-title {
-    @extend %zero-indents;
     @include text($size: $mob-l);
     letter-spacing: -0.72px;
   }
   &__item-info {
-    @extend %zero-indents;
     @include text($size: $mob-s, $height: 16px);
   }
   &__table {
-    @extend %zero-indents;
     width: 100%;
   }
   &__table-body {
-    @extend %zero-indents;
     @include text($family: $suisseintl-f-nm, $size: $mob-s, $color: $color-gray-cell-f, $align: center);
     width: 100%;
     display: grid;
