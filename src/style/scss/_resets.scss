@@ -8,7 +8,8 @@ h5,
 h6,
 div,
 section,
-table {
+table,
+img {
   margin: 0;
   padding: 0;
 }
@@ -47,8 +48,12 @@ a {
   text-decoration: none;
 }
 
-// Add a pointer cursor to clickable elements
+// Add a pointer cursor and hover effect to clickable elements
 button,
-[role="button"] {
+[role="button"],
+a {
   cursor: pointer;
+  &:hover {
+    opacity: .8;
+  }
 }

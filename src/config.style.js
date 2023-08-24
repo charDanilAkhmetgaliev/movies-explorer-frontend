@@ -45,6 +45,36 @@ const MainPageConfig = {
       'mongoDB',
     ],
   },
+  aboutMe: {
+    header: 'Студент',
+    photoDescription: 'Фотография студента',
+    data: {
+      name: 'Даниль',
+      status: 'Junior веб-разработчик, 25 лет',
+      description: 'Я родился и живу в Казани, закончил бакалавриат(4 года) и магистратуру(2 года) по направлениям "Информатика и вычислительная техника" и "Бизнес-информатика" соответсвенно. Люблю играть в настольные игры и занимаюсь фитнесом. Обучаюсь веб-разработке 1.5 года, есть четыре завершенных проекта. В данный момент работаю над новым проектом, параллельно изучаю TS и Redux.',
+    },
+    github: {
+      name: 'Github',
+      link: 'https://github.com/charDanilAkhmetgaliev',
+    },
+    portfolio: {
+      header: 'Портфолио',
+      list: [
+        {
+          name: 'Статичный сайт',
+          link: 'https://chardanilakhmetgaliev.github.io/how-to-learn/',
+        },
+        {
+          name: 'Адаптивный сайт',
+          link: 'https://chardanilakhmetgaliev.github.io/russian-travel/',
+        },
+        {
+          name: 'Одностраничное приложение',
+          link: '',
+        },
+      ],
+    },
+  },
 };
 
 export {

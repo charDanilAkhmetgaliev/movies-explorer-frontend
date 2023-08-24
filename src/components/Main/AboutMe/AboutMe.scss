@@ -1,0 +1,58 @@
+.about-me {
+  @include container($direction: column, $gap: 40px);
+  &__photo {
+    width: 100%;
+    max-height: 352px;
+    border-radius: 10px;
+  }
+  &__data {
+    @include container($direction: column, $gap: 20px);
+  }
+  &__name {
+    @include text($size: 30px);
+    letter-spacing: -1.2px;
+  }
+  &__status {
+    @include text($size: 11px, $weight: 500, $height: 16px);
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__description {
+    @include text($size: 11px, $weight: 400, $height: 16px);
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__github-link {
+    margin-bottom: 30px;
+    @include text($size: 14px, $weight: 500);
+  }
+  &__portfolio {
+    width: 100%;
+    @include container($direction: column, $gap: 40px);
+  }
+  &__portfolio-header {
+    @include text($size: 14px, $weight: 400, $height: 20px, $color: $color-gray-cell-f);
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__portfolio-list {
+    width: 100%;
+    @include container($direction: column, $gap: 40px);
+  }
+  &__portfolio-item {
+    width: 100%;
+  }
+  &__portfolio-link {
+    @include container($direction: row, $position: space-between);
+    @include text($size: 18px, $height: 28px);
+    letter-spacing: -0.72px;
+  }
+  &__portfolio-link-arrow {
+    min-width: 18px;
+    min-height: 28px;
+    background: {
+      color: transparent;
+      position: center;
+      image: url('../../../images/link-arrow.svg');
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+}
