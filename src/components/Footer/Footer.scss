@@ -14,8 +14,21 @@
     margin-bottom: 30px;
   }
   &__copyright {
-    @include text($size: $mob-m);
     width: 100%;
+  }
+  &__service {
+    @include text($size: $mob-m);
     margin-bottom: 12px;
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__github-link {
+    @include text($size: $mob-m);
+    display: block;
+    margin-bottom: 30px;
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__year {
+    @include text($size: $mob-m, $color: $color-gray-cell-f);
+    font-feature-settings: 'clig' off, 'liga' off;
   }
 }

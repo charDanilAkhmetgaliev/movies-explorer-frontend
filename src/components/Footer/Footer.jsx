@@ -15,7 +15,10 @@ function Footer() {
       <div className="footer__copyright">
         <p className="footer__service">{service}</p>
         <a href={github.link} className="footer__github-link">{github.name}</a>
-        <p className="footer__year">{year}</p>
+        <p className="footer__year">
+          &copy;
+          {year}
+        </p>
       </div>
     </footer>
   );
