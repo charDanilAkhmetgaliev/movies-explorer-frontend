@@ -26,3 +26,8 @@
   align-items: $align;
   gap: $gap;
 }
+
+@mixin separate-line($color: $color-black) {
+  @extend %separate-line-style;
+  background-color: $color;
+}

@@ -9,27 +9,27 @@
     @include container($direction: column, $gap: 20px);
   }
   &__name {
-    @include text($size: 30px);
+    @include text($size: $mob-xxl);
     letter-spacing: -1.2px;
   }
   &__status {
-    @include text($size: 11px, $weight: 500, $height: 16px);
+    @include text($size: $mob-s, $weight: 500, $height: 16px);
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__description {
-    @include text($size: 11px, $weight: 400, $height: 16px);
+    @include text($size: $mob-s, $weight: 400, $height: 16px);
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__github-link {
     margin-bottom: 30px;
-    @include text($size: 14px, $weight: 500);
+    @include text($size: $mob-l, $weight: 500);
   }
   &__portfolio {
     width: 100%;
     @include container($direction: column, $gap: 40px);
   }
   &__portfolio-header {
-    @include text($size: 14px, $weight: 400, $height: 20px, $color: $color-gray-cell-f);
+    @include text($size: $mob-l, $weight: 400, $height: 20px, $color: $color-gray-cell-f);
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__portfolio-list {
@@ -41,7 +41,7 @@
   }
   &__portfolio-link {
     @include container($direction: row, $position: space-between);
-    @include text($size: 18px, $height: 28px);
+    @include text($size: $mob-xl, $height: 28px);
     letter-spacing: -0.72px;
   }
   &__portfolio-link-arrow {

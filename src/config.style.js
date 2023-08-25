@@ -10,6 +10,16 @@ const HeaderConfig = {
   registerText: 'Регистрация',
 };
 
+const FooterConfig = {
+  integration: 'Учебный проект Яндекс.Практикум х BeatFilm.',
+  service: 'Яндекс.Практикум',
+  github: {
+    name: 'Github',
+    link: 'https://github.com/charDanilAkhmetgaliev',
+  },
+  year: '&copy;2020',
+};
+
 const MainPageConfig = {
   promo: {
     title: 'Учебный проект студента факультета Веб-разработки.',
@@ -80,5 +90,6 @@ const MainPageConfig = {
 export {
   NotFoundPageConfig,
   HeaderConfig,
+  FooterConfig,
   MainPageConfig,
 };

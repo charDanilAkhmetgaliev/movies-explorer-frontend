@@ -8,7 +8,7 @@
     @include text();
   }
   &__item-title {
-    @include text($size: $mob-l);
+    @include text($size: $mob-xl);
     letter-spacing: -0.72px;
   }
   &__item-info {

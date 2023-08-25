@@ -15,9 +15,9 @@ function Techs() {
         <ul className="techs__list">
           {
               listData.map((tech) => (
-                <li className="techs__tech">{tech}</li>
+                <li key={Math.floor(Math.random() * 1000 + 1)} className="techs__tech">{tech}</li>
               ))
-            }
+          }
         </ul>
       </div>
     </SectionWrapper>

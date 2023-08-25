@@ -27,7 +27,7 @@ function AboutMe() {
           <ul className="about-me__portfolio-list">
             {
               portfolio.list.map((item) => (
-                <li className="about-me__portfolio-item">
+                <li key={Math.floor(Math.random() * 1000 + 1)} className="about-me__portfolio-item">
                   <a href={item.link} className="about-me__portfolio-link" target="_blank" rel="noreferrer">
                     {item.name}
                     <div className="about-me__portfolio-link-arrow" />

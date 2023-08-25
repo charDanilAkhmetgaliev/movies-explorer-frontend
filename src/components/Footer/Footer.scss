@@ -1,0 +1,21 @@
+.footer {
+  @include container($direction: column);
+  width: 100%;
+  padding: 79px 10px 20px;
+  text-align: center;
+  &__integration-string {
+    @include text($size: $mob-m, $color: $color-gray-cell-f);
+    width: 100%;
+    margin-bottom: 21px;
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  &__separate-line {
+    @include separate-line($color: $color-gray-tech-bkg);
+    margin-bottom: 30px;
+  }
+  &__copyright {
+    @include text($size: $mob-m);
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
