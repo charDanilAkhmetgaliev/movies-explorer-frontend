@@ -2,6 +2,7 @@ import React from 'react';
 import SectionWrapper from '../SectionWrapper/SectionWrapper';
 import { MainPageConfig } from '../../../config.style';
 import studentPhoto from '../../../images/student-photo.jpg';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 function AboutMe() {
   const {
@@ -13,17 +14,18 @@ function AboutMe() {
   } = MainPageConfig.aboutMe;
 
   return (
-    <SectionWrapper headerTitle={header}>
+    <SectionWrapper>
+      <SectionHeader headerTitle={header} />
       <div className="about-me">
         <img className="about-me__photo" src={studentPhoto} alt={photoDescription} />
         <div className="about-me__data">
           <h2 className="about-me__name">{data.name}</h2>
           <p className="about-me__status">{data.status}</p>
           <p className="about-me__description">{data.description}</p>
+          <a className="about-me__github-link" href={github.link} target="_blank" rel="noreferrer">{github.name}</a>
         </div>
-        <a className="about-me__github-link" href={github.link} target="_blank" rel="noreferrer">{github.name}</a>
         <div className="about-me__portfolio">
-          <h3 className="about-me__portfolio-header">{portfolio.header}</h3>
+          <h3 className="about-me__portfolio-title">{portfolio.header}</h3>
           <ul className="about-me__portfolio-list">
             {
               portfolio.list.map((item) => (

@@ -10,3 +10,13 @@
     @include separate-line();
   }
 }
+
+@media screen and (min-width: $tab-screen-w) {
+  .section-header {
+    gap: 23px;
+    &__title {
+      font-size: $tab-m;
+      letter-spacing: -0.88px;
+    }
+  }
+}

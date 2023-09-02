@@ -1,12 +1,14 @@
 .about-me {
   @include container($direction: column, $gap: 40px);
+  margin: 60px auto 0;
+  width: 100%;
   &__photo {
     width: 100%;
     max-height: 352px;
     border-radius: 10px;
   }
   &__data {
-    @include container($direction: column, $gap: 20px);
+    @include container($direction: column);
   }
   &__name {
     @include text($size: $mob-xxl);
@@ -21,14 +23,13 @@
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__github-link {
-    margin-bottom: 30px;
     @include text($size: $mob-l, $weight: 500);
   }
   &__portfolio {
     width: 100%;
     @include container($direction: column, $gap: 40px);
   }
-  &__portfolio-header {
+  &__portfolio-title {
     @include text($size: $mob-l, $weight: 400, $height: 20px, $color: $color-gray-cell-f);
     font-feature-settings: 'clig' off, 'liga' off;
   }
@@ -53,6 +54,57 @@
       image: url('../../../images/link-arrow.svg');
       size: contain;
       repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .about-me {
+    margin: 66px auto 0;
+    gap: 91px;
+    &__photo {
+      position: absolute;
+      width: 255px;
+      height: 307px;
+      right: 0;
+    }
+    &__data {
+      max-width: 364px;
+    }
+    &__name {
+      font-size: $tab-xl;
+      letter-spacing: -1.6px;
+      line-height: 40px;
+      margin-bottom: 16px;
+    }
+    &__status {
+      font-size: $mob-m;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: $mob-m;
+      line-height: 18px;
+      margin-bottom: 87px;
+    }
+    &__github-link {
+      font-size: $mob-l;
+    }
+    &__portfolio {
+      gap: 50px;
+    }
+    &__portfolio-title {
+      font-size: $mob-xl;
+      line-height: 20px;
+    }
+    &__portfolio-link {
+      font-size: $tab-l;
+      letter-spacing: -1.12;
+      line-height: 50px;
+    }
+    &__portfolio-link-arrow {
+      min-width: 27px;
+      min-height: 60px;
     }
   }
 }

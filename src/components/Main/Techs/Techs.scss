@@ -1,5 +1,7 @@
 .techs {
   @include container(column, $align: center);
+  width: 100%;
+  margin: 60px auto 0;
   &__title {
     @include text($size: $mob-xxl, $align: center);
     margin-bottom: 24px;
@@ -24,5 +26,24 @@
     background-color: $color-gray-tech-bkg;
     border-radius: 10px;
     box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .techs {
+    margin: 80px auto 0;
+    &__title {
+      margin-bottom: 22px;
+      line-height: 58px;
+      font-size: $tab-xxl;
+    }
+    &__info {
+      margin-bottom: 83px;
+      line-height: 18px;
+      font-size: $mob-m;
+    }
+    &__list {
+      display: flex;
+    }
   }
 }

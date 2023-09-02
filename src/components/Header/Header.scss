@@ -1,9 +1,12 @@
 .header {
-  @include container(row, space-between, center);
-  margin: auto;
-  padding: 18px 14px;
   width: 100%;
-  max-width: $mob-screen-w;
+  min-width: $mob-screen-w;
+  &__container {
+    @include container(row, space-between, center);
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 18px 14px;
+  }
   &__logo {
     @include image-decoration(url('../../images/logo.svg'));
     width: $mob-logo-size;
@@ -27,4 +30,29 @@
     @include text($size: $mob-xs, $weight: $medium-f-weight, $height: 16px, $color: $color-white);
     padding: 5px 12px;
   }
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .header {
+    &__container {
+      padding: 18px 30px;
+    }
+    &__burger-menu {
+      width: 44px;
+      height: 44px;
+    }
+    &__auth-bar {
+      gap: 30px;
+    }
+    &__register-button {
+      font-size: $mob-m;
+    }
+    &__login-button {
+      font-size: $mob-m;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
 }

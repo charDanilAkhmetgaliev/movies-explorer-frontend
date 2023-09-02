@@ -6,19 +6,21 @@ function Header() {
   const isMain = (window.location.pathname === '/');
   return (
     <header className="header" style={isMain && { backgroundColor: HeaderConfig.introColor }}>
-      <div className="header__logo" />
-      <Routes>
-        <Route
-          path="/"
-          element={(
-            <div className="header__auth-bar">
-              <button className="header__register-button" type="button">{HeaderConfig.registerText}</button>
-              <button className="header__login-button" type="button">{HeaderConfig.loginText}</button>
-            </div>
-        )}
-        />
-        <Route path="*" element={<div className="header__burger-menu" />} />
-      </Routes>
+      <div className="header__container">
+        <div className="header__logo" />
+        <Routes>
+          <Route
+            path="/"
+            element={(
+              <div className="header__auth-bar">
+                <button className="header__register-button" type="button">{HeaderConfig.registerText}</button>
+                <button className="header__login-button" type="button">{HeaderConfig.loginText}</button>
+              </div>
+            )}
+          />
+          <Route path="*" element={<div className="header__burger-menu" />} />
+        </Routes>
+      </div>
     </header>
   );
 }

@@ -1,5 +1,5 @@
 .not-found {
-  @include page();
+  @extend %page-style;
   @include container(column, center, center, 10px);
   padding: 329px 10px;
   &__header {
