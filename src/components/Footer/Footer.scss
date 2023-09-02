@@ -14,7 +14,11 @@
     margin-bottom: 30px;
   }
   &__copyright {
+    @include container($direction: column, $align: center);
     width: 100%;
+  }
+  &__copy-container {
+    @include container($direction: column, $align: center);
   }
   &__service {
     @include text($size: $mob-m);
@@ -23,12 +27,46 @@
   }
   &__github-link {
     @include text($size: $mob-m);
+    width: fit-content;
     display: block;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__year {
     @include text($size: $mob-m, $color: $color-gray-cell-f);
     font-feature-settings: 'clig' off, 'liga' off;
+  }
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .footer {
+    padding: 79px 30px 20px;
+    &__integration-string {
+      margin-bottom: 20px;
+      font-size: $tab-xs;
+    }
+    &__separate-line {
+      margin-bottom: 20px;
+    }
+    &__copyright {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &__copy-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &__github-link {
+      margin: 0;
+      font-size: $tab-xs;
+    }
+    &__service {
+      margin: 0 20px 0 0;
+      font-size: $tab-xs;
+    }
+    &__year {
+      color: $color-black;
+      font-size: $tab-xs;
+    }
   }
 }

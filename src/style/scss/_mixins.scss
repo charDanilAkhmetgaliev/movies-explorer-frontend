@@ -1,8 +1,3 @@
-@mixin page($device-width: $mob-screen-w) {
-  @extend %page-style;
-  max-width: $device-width;
-}
-
 @mixin button($font-size: $mob-m, $border-radius: $mob-br-rd) {
   @extend %button-def-style;
   border-radius: $border-radius;

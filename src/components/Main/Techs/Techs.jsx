@@ -1,6 +1,7 @@
 import React from 'react';
 import { MainPageConfig } from '../../../config.style';
 import SectionWrapper from '../SectionWrapper/SectionWrapper';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 function Techs() {
   const {
@@ -8,7 +9,8 @@ function Techs() {
   } = MainPageConfig.techs;
 
   return (
-    <SectionWrapper headerTitle={header}>
+    <SectionWrapper>
+      <SectionHeader headerTitle={header} />
       <div className="techs">
         <h1 className="techs__title">{title}</h1>
         <p className="techs__info">{info}</p>

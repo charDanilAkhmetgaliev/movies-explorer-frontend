@@ -1,4 +1,10 @@
 .section-wrapper {
-  @include container(column, $gap: 60px);
+  @include container(column);
   padding: 70px 18px;
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .section-wrapper {
+    padding: 90px 50px;
+  }
 }

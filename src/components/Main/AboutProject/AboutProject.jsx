@@ -1,12 +1,14 @@
 import React from 'react';
 import { MainPageConfig } from '../../../config.style';
 import SectionWrapper from '../SectionWrapper/SectionWrapper';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 function AboutProject() {
   const { header, listData, tableData } = MainPageConfig.aboutProject;
 
   return (
-    <SectionWrapper headerTitle={header}>
+    <SectionWrapper>
+      <SectionHeader headerTitle={header} />
       <div className="about-project">
         <ul className="about-project__list">
           { listData.map((item) => (

@@ -1,11 +1,12 @@
 .about-project {
   @include container(column, $gap: 60px);
+  width: 100%;
+  margin: 60px auto 0;
   &__list {
     @include container(column, $gap: 56px);
   }
   &__list-item {
     @include container(column, $gap: 16px);
-    @include text();
   }
   &__item-title {
     @include text($size: $mob-xl);
@@ -39,5 +40,37 @@
   }
   &__table-cell {
     @include container($position: center, $align: center);
+  }
+}
+
+@media screen and (min-width: $tab-screen-w) {
+  .about-project {
+    margin: 70px auto 0;
+    gap: 93px;
+    &__list {
+      flex-direction: row;
+      gap: 36px;
+    }
+    &__list-item {
+      gap: 22px;
+    }
+    &__item-title {
+      font-size: $tab-s;
+      letter-spacing: -0.8px;
+    }
+    &__item-info {
+      font-size: $mob-m;
+      line-height: 18px;
+    }
+    &__table-body {
+      font-size: $mob-l;
+      row-gap: 14px;
+      tr:first-child {
+        height: 36px;
+      }
+    }
+    &__table-row {
+      grid-template-columns: 140px auto;
+    }
   }
 }

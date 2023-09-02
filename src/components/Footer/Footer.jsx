@@ -13,8 +13,10 @@ function Footer() {
       <p className="footer__integration-string">{integration}</p>
       <div className="footer__separate-line" />
       <div className="footer__copyright">
-        <p className="footer__service">{service}</p>
-        <a href={github.link} className="footer__github-link">{github.name}</a>
+        <div className="footer__copy-container">
+          <p className="footer__service">{service}</p>
+          <a href={github.link} className="footer__github-link">{github.name}</a>
+        </div>
         <p className="footer__year">
           &copy;
           {year}
