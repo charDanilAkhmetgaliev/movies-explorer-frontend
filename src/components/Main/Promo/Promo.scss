@@ -1,5 +1,5 @@
 .promo {
-  @include container(column, $align: center, $gap: 60px);
+  @include container(column, $gap: 60px);
   margin: 0;
   padding: 183px 0 40px;
   background-color: $color-promo;
@@ -7,8 +7,9 @@
   min-width: $mob-screen-w;
   &__title {
     @include text($size: 31px, $height: 39px, $align: center);
+    margin: auto;
     letter-spacing: -1.24px;
-      width: 300px;
+    width: 300px;
   }
   &__logo {
     @include image-decoration(url('../../../images/landing-logo.svg'), cover);
@@ -19,16 +20,36 @@
 
 @media screen and (min-width: $tab-screen-w) {
   .promo {
-    padding: 300px 0 70px;
+    padding: 300px 44px 70px;
     gap: 140px;
     &__title {
-      width: $tab-screen-w;
+      width: 100%;
       font-size: $tab-xl;
       line-height: 52px;
       letter-spacing: -1.6px;
     }
     &__logo {
       width: $tab-screen-w;
+    }
+  }
+}
+
+@media screen and (min-width: $desc-screen-w) {
+  .promo {
+    padding: 50px 70px 60px;
+    gap: 102px;
+    &__title {
+      margin: 0;
+      max-width: 626px;
+      font-size: $tab-xl;
+      line-height: 52px;
+      letter-spacing: -1.6px;
+      text-align: left;
+    }
+    &__logo {
+      width: 722px;
+      height: 244px;
+      align-self: flex-end;
     }
   }
 }
