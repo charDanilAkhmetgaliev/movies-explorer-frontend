@@ -32,10 +32,13 @@ function AboutMe() {
             {
               portfolio.list.map((item) => (
                 <li key={Math.floor(Math.random() * 1000 + 1)} className="about-me__portfolio-item">
-                  <a href={item.link} className="about-me__portfolio-link" target="_blank" rel="noreferrer">
-                    {item.name}
-                    <div className="about-me__portfolio-link-arrow" />
-                  </a>
+                  <p className="about-me__portfolio-item-container">
+                    <span className="about-me__portfolio-item-name">{item.name}</span>
+                    <a href={item.link} className="about-me__portfolio-link-arrow" target="_blank" rel="noreferrer">
+                      &#x2197;
+                    </a>
+                  </p>
+                  <div className="about-me__portfolio-separate-line" />
                 </li>
               ))
             }

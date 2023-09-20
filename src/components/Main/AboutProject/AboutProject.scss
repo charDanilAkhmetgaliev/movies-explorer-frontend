@@ -74,3 +74,23 @@
     }
   }
 }
+
+@media screen and (min-width: $desc-screen-w) {
+  .about-project {
+    gap: 108px;
+    &__list {
+      gap: 52px;
+    }
+    &__list-item {
+      gap: 26px;
+    }
+    &__item-info {
+      font-size: $mob-l;
+      line-height: 20px;
+    }
+    &__table-row {
+      grid-template-columns: 228px auto;
+    }
+  }
+}
+

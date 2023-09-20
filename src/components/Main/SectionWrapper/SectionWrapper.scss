@@ -8,3 +8,10 @@
     padding: 90px 50px;
   }
 }
+
+@media screen and (min-width: $desc-screen-w) {
+  .section-wrapper {
+    padding: 110px 70px;
+  }
+}
+

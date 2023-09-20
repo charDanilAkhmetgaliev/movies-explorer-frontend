@@ -39,27 +39,28 @@
     font-feature-settings: 'clig' off, 'liga' off;
   }
   &__portfolio-list {
+    @include container($direction: column, $gap: 20px);
     width: 100%;
-    @include container($direction: column, $gap: 40px);
   }
   &__portfolio-item {
     width: 100%;
   }
-  &__portfolio-link {
-    @include container($direction: row, $position: space-between);
+  &__portfolio-item-container {
     @include text($size: $mob-xl, $height: 28px);
+    @include container($position: space-between);
+    margin-bottom: 19px;
     letter-spacing: -0.72px;
   }
+  &__portfolio-item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   &__portfolio-link-arrow {
-    min-width: 18px;
-    min-height: 28px;
-    background: {
-      color: transparent;
-      position: center;
-      image: url('../../../images/link-arrow.svg');
-      size: contain;
-      repeat: no-repeat;
-    }
+    color: $color-black;
+  }
+  &__portfolio-separate-line {
+    @include separate-line($color-gray-tech-bkg);
   }
 }
 
@@ -105,14 +106,55 @@
       font-size: $mob-xl;
       line-height: 20px;
     }
-    &__portfolio-link {
+    &__portfolio-item-container {
       font-size: $tab-l;
       letter-spacing: -1.12;
       line-height: 50px;
     }
-    &__portfolio-link-arrow {
-      min-width: 27px;
-      min-height: 60px;
+  }
+}
+
+@media screen and (min-width: $desc-screen-w) {
+  .about-me {
+    gap: 101px;
+    &__photo {
+      margin: 0;
+      max-width: 270px;
+      max-height: 327px;
+    }
+    &__data {
+      max-width: 600px;
+    }
+    &__name {
+      font-size: $tab-xxl;
+      letter-spacing: -2px;
+      line-height: 40px;
+      margin-bottom: 18px;
+    }
+    &__status {
+      font-size: $mob-xl;
+      line-height: 18px;
+      margin-bottom: 26px;
+    }
+    &__description {
+      font-size: $mob-l;
+      line-height: 22px;
+      margin-bottom: 99px;
+    }
+    &__github-link {
+      font-size: $mob-l;
+    }
+    &__portfolio {
+      gap: 50px;
+    }
+    &__portfolio-title {
+      font-size: $mob-xl;
+      line-height: 20px;
+    }
+    &__portfolio-item-container {
+      font-size: $mob-xxl;
+      letter-spacing: -1.2;
+      line-height: 50px;
     }
   }
 }

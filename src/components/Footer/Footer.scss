@@ -1,6 +1,7 @@
 .footer {
   @include container($direction: column);
   width: 100%;
+  max-width: $max-screen-w;
   padding: 79px 10px 20px;
   text-align: center;
   &__integration-string {
@@ -61,7 +62,7 @@
       font-size: $tab-xs;
     }
     &__service {
-      margin: 0 20px 0 0;
+      margin-right: 20px;
       font-size: $tab-xs;
     }
     &__year {
@@ -70,3 +71,10 @@
     }
   }
 }
+
+@media screen and (min-width: $desc-screen-w) {
+  .footer {
+    padding: 94px 70px 20px;
+  }
+}
+
