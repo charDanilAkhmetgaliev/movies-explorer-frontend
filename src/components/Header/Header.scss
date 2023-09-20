@@ -53,3 +53,22 @@
     }
   }
 }
+
+@media screen and (min-width: $desc-screen-w) {
+  .header {
+    &__container {
+      padding: 18px 70px;
+    }
+    &__auth-bar {
+      gap: 30px;
+    }
+    &__register-button {
+      font-size: $mob-m;
+    }
+    &__login-button {
+      padding: 8px 20px;
+      font-size: $mob-m;
+    }
+  }
+}
+
