@@ -12,20 +12,20 @@
     max-height: 352px;
     border-radius: 10px;
   }
-  &__data {
-    @include container($direction: column);
-  }
   &__name {
     @include text($size: $mob-xxl);
+    margin-bottom: 20px;
     letter-spacing: -1.2px;
   }
   &__status {
     @include text($size: $mob-s, $weight: 500, $height: 16px);
     font-feature-settings: 'clig' off, 'liga' off;
+    margin-bottom: 20px;
   }
   &__description {
     @include text($size: $mob-s, $weight: 400, $height: 16px);
     font-feature-settings: 'clig' off, 'liga' off;
+    margin-bottom: 40px;
   }
   &__github-link {
     @include text($size: $mob-l, $weight: 500);
@@ -76,9 +76,6 @@
       margin: 0;
       max-width: 255px;
       max-height: 307px;
-    }
-    &__data {
-      max-width: 364px;
     }
     &__name {
       font-size: $tab-xl;
